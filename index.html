@@ -22,7 +22,7 @@
   <div class="desktop">
     <header class="header">
       <div class="header__city"></div>
-      <div class="container">
+      <div class="container_head">
         <img alt="#" src="img/logo.svg" class="header__logo">
         <div class="header__content">
           <div class="header__title">
@@ -30,7 +30,7 @@
             <p style="text-align: center">в столицу</p>
             <p style="text-align: right">земного шара</p>
           </div>
-          <div class="header__subtitle">
+          <div class="header__subtitle" style="text-align: center;">
             Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам
           </div>
           <div class="header__buttons">
@@ -289,9 +289,8 @@
             Будущие источники обогащения васюкинцев
           </a>
         </p>
-      </section>
 
-        <!-- <img src="img/plane.png" alt="#" class="stages__plane"> -->
+        <img src="img/plane.png" alt="#" class="stages__plane_mob">
 
         <div class="carousel">
           <div class="slides">
@@ -325,10 +324,7 @@
                 самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
               </div>
             </div>
-
-
           </div>
-
         </div>
         <div class="controls">
           <button class="btn btn--circle" id="prev-slide" data-carousel-prev="players">
@@ -339,94 +335,96 @@
             <img src="img/arrow-right.png" alt="#">
           </button>
         </div>
+      </section>
 
-  <section class="players">
-    <div class="players__header">
-      <span class="players__title">Участники турнира</span>
-    </div>
-    <div class="page">
-      <div class="carousel-container">
-        <aside class="carousel">
-          <div class="carousel__wrapper">
-            <div class="item" id="slide-1">
-              <div class="player">
-                <img src="img/player.png" alt="#">
-                <div class="player__name">Хозе-Рауль Капабланка</div>
-                <div class="player__status">Чемпион мира по шахматам</div>
-                <button class="btn btn--detailed">Подробнее</button>
+
+      <section class="players">
+        <div class="players__header">
+          <span class="players__title">Участники турнира</span>
+        </div>
+        <div class="page">
+          <div class="carousel-container">
+            <aside class="carousel">
+              <div class="carousel__wrapper">
+                <div class="item" id="slide-1">
+                  <div class="player">
+                    <img src="img/player.png" alt="#">
+                    <div class="player__name">Хозе-Рауль Капабланка</div>
+                    <div class="player__status">Чемпион мира по шахматам</div>
+                    <button class="btn btn--detailed">Подробнее</button>
+                  </div>
+                </div>
+                <div class="item" id="slide-2">
+                  <div class="player">
+                    <img src="img/player.png" alt="#">
+                    <div class="player__name">Эммануил Ласкер</div>
+                    <div class="player__status">Чемпион мира по шахматам</div>
+                    <button class="btn btn--detailed">Подробнее</button>
+                  </div>
+                </div>
+                <div class="item" id="slide-3">
+                  <div class="player">
+                    <img src="img/player.png" alt="#">
+                    <div class="player__name">Александр Алехин</div>
+                    <div class="player__status">Чемпион мира по шахматам</div>
+                    <button class="btn btn--detailed">Подробнее</button>
+                  </div>
+                </div>
+                <div class="item" id="slide-4">
+                  <div class="player">
+                    <img src="img/player.png" alt="#">
+                    <div class="player__name">Арон Нимцович</div>
+                    <div class="player__status">Чемпион мира по шахматам</div>
+                    <button class="btn btn--detailed">Подробнее</button>
+                  </div>
+                </div>
+                <div class="item" id="slide-5">
+                  <div class="player">
+                    <img src="img/player.png" alt="#">
+                    <div class="player__name">Рихард Рети</div>
+                    <div class="player__status">Чемпион мира по шахматам</div>
+                    <button class="btn btn--detailed">Подробнее</button>
+                  </div>
+                </div>
+                <div class="item" id="slide-6">
+                  <div class="player">
+                    <img src="img/player.png" alt="#">
+                    <div class="player__name">Остап Бендер</div>
+                    <div class="player__status">Чемпион мира по шахматам</div>
+                    <button class="btn btn--detailed">Подробнее</button>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="item" id="slide-2">
-              <div class="player">
-                <img src="img/player.png" alt="#">
-                <div class="player__name">Эммануил Ласкер</div>
-                <div class="player__status">Чемпион мира по шахматам</div>
-                <button class="btn btn--detailed">Подробнее</button>
-              </div>
-            </div>
-            <div class="item" id="slide-3">
-              <div class="player">
-                <img src="img/player.png" alt="#">
-                <div class="player__name">Александр Алехин</div>
-                <div class="player__status">Чемпион мира по шахматам</div>
-                <button class="btn btn--detailed">Подробнее</button>
-              </div>
-            </div>
-            <div class="item" id="slide-4">
-              <div class="player">
-                <img src="img/player.png" alt="#">
-                <div class="player__name">Арон Нимцович</div>
-                <div class="player__status">Чемпион мира по шахматам</div>
-                <button class="btn btn--detailed">Подробнее</button>
-              </div>
-            </div>
-            <div class="item" id="slide-5">
-              <div class="player">
-                <img src="img/player.png" alt="#">
-                <div class="player__name">Рихард Рети</div>
-                <div class="player__status">Чемпион мира по шахматам</div>
-                <button class="btn btn--detailed">Подробнее</button>
-              </div>
-            </div>
-            <div class="item" id="slide-6">
-              <div class="player">
-                <img src="img/player.png" alt="#">
-                <div class="player__name">Остап Бендер</div>
-                <div class="player__status">Чемпион мира по шахматам</div>
-                <button class="btn btn--detailed">Подробнее</button>
-              </div>
-            </div>
+            </aside>
           </div>
-        </aside>
-      </div>
-    </div>
-    <div class="players__buttons mobile">
-      <button class="btn btn--circle" data-carousel-prev="players">
-        <img src="img/arrow-left.png" alt="#">
-      </button>
-      <span>
-        <span data-carousel-current-page="players">1</span>
-        <span class="players__count">
-          / <span data-carousel-pages-count="players">2</span>
-        </span>
-      </span>
-      <button class="btn btn--circle" data-carousel-next="players">
-        <img src="img/arrow-right.png" alt="#">
-      </button>
-    </div>
-  </section>
-     </main>
-  <marquee class="marquee" behaviour="slide">
-    <span>Дело помощи утопающим — дело рук самих утопающих!</span>
-    <span>Шахматы двигают вперед не только культуру, но и экономику!</span>
-    <span>Лед тронулся, господа присяжные заседатели!</span>
-  </marquee>
-  <footer class="footer">
-    <p class="container">
-      Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно
-      познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».
-    </p>
-  </footer>
+        </div>
+        <div class="players__buttons mobile">
+          <button class="btn btn--circle" data-carousel-prev="players">
+            <img src="img/arrow-left.png" alt="#">
+          </button>
+          <span>
+            <span data-carousel-current-page="players">1</span>
+            <span class="players__count">
+              / <span data-carousel-pages-count="players">2</span>
+            </span>
+          </span>
+          <button class="btn btn--circle" data-carousel-next="players">
+            <img src="img/arrow-right.png" alt="#">
+          </button>
+        </div>
+      </section>
+    </main>
+    <marquee class="marquee" behaviour="slide">
+      <span>Дело помощи утопающим — дело рук самих утопающих!</span>
+      <span>Шахматы двигают вперед не только культуру, но и экономику!</span>
+      <span>Лед тронулся, господа присяжные заседатели!</span>
+    </marquee>
+    <footer class="footer">
+      <p class="container">
+        Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно
+        познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».
+      </p>
+    </footer>
 
   </div>
 
