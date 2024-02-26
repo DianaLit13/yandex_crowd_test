@@ -1,0 +1,215 @@
+@-webkit-keyframes carousel-animate {
+  0% {
+    visibility: hidden;
+    opacity: 0.5;
+    transform: translateX(200%) scale(0.7);
+  }
+  3%, 16.6666666667% {
+    visibility: visible;
+    opacity: 0.8;
+    transform: translateX(100%) scale(0.9);
+  }
+  19.6666666667%, 33.3333333333% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  36.3333333333%, 50% {
+    visibility: visible;
+    opacity: 0.8;
+    transform: translateX(-100%) scale(0.9);
+  }
+  53% {
+    visibility: visible;
+    opacity: 0;
+    transform: translateX(-200%) scale(0.9);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-200%) scale(0.7);
+  }
+}
+@keyframes carousel-animate {
+  0% {
+    visibility: hidden;
+    opacity: 0.5;
+    transform: translateX(200%) scale(0.7);
+  }
+  3%, 16.6666666667% {
+    visibility: visible;
+    opacity: 0.8;
+    transform: translateX(100%) scale(0.9);
+  }
+  19.6666666667%, 33.3333333333% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  36.3333333333%, 50% {
+    visibility: visible;
+    opacity: 0.8;
+    transform: translateX(-100%) scale(0.9);
+  }
+  53% {
+    visibility: visible;
+    opacity: 0;
+    transform: translateX(-200%) scale(0.9);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-200%) scale(0.7);
+  }
+}
+.page {
+  height: 530px;
+  --width: 70%;
+  --background-color: green;
+  --padding: 5px;
+  padding-top: 60px;
+}
+
+.carousel-container {
+  --container-padding-horizontal: 32px;
+  position: relative;
+  --padding-inline: var(--container-padding-horizontal);
+  display: grid;
+  place-items: center;
+  height: 100%;
+  --background-color: silver;
+  overflow: hidden;
+}
+
+.carousel {
+  --box-sizing: border-box;
+  --border:3px solid red;
+  pointer-events: none;
+  position: absolute;
+  --padding-block-start: 67px;
+  --padding-block-end: max(24px, calc(29px + var(--font-size-md)));
+  --perspective: 100px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+@media (max-width: 568px) {
+  .carousel {
+    --padding-block-end: 52px;
+  }
+}
+.carousel__wrapper {
+  --border: 3px solid black;
+  --width: 60%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  --height: 41.2vh;
+  height: 100%;
+}
+.carousel .item {
+  position: absolute;
+  max-width: 418px;
+  height: 100%;
+  --margin-inline: var(--container-padding-horizontal);
+  opacity: 0;
+  will-change: transform, opacity;
+  -webkit-animation: carousel-animate 24s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+          animation: carousel-animate 24s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+}
+@media (max-width: 568px) {
+  .carousel .item {
+    --margin-inline: calc(var(--container-padding-horizontal) + 1px);
+  }
+}
+.carousel .item:nth-child(1) {
+  -webkit-animation-delay: calc(4s * -1);
+          animation-delay: calc(4s * -1);
+}
+.carousel .item:nth-child(2) {
+  -webkit-animation-delay: calc(4s * 0);
+          animation-delay: calc(4s * 0);
+}
+.carousel .item:nth-child(3) {
+  -webkit-animation-delay: calc(4s * 1);
+          animation-delay: calc(4s * 1);
+}
+.carousel .item:nth-child(4) {
+  -webkit-animation-delay: calc(4s * 2);
+          animation-delay: calc(4s * 2);
+}
+.carousel .item:nth-child(5) {
+  -webkit-animation-delay: calc(4s * 3);
+          animation-delay: calc(4s * 3);
+}
+.carousel .item:last-child {
+  -webkit-animation-delay: calc(-4s * 2);
+          animation-delay: calc(-4s * 2);
+}
+.carousel img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.carousel {
+  width: 80vw;
+  height: 477px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel_fly{
+  width: 335px;
+  height: 300px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+.carousel:hover .controls {
+  opacity: 1;
+}
+.carousel .controls {
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease 0.5s;
+}
+.carousel .controls .control {
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0.5;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+.carousel .controls .control:hover {
+  opacity: 1;
+}
+.carousel .slides {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  width: 100%;
+  transition: 1s ease-in-out all;
+}
+.carousel .slides .slide {
+  min-width: 100%;
+  min-height: 250px;
+  height: auto;
+}
