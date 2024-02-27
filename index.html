@@ -17,29 +17,33 @@
 </head>
 
 <body>
-
-
   <div class="desktop">
-    <header class="header">
-      <div class="header__city"></div>
-      <div class="container_head">
-        <img alt="#" src="img/logo.svg" class="header__logo">
-        <div class="header__content">
-          <div class="header__title">
-            <p>Превратите уездный город</p>
-            <p style="text-align: center">в столицу</p>
-            <p style="text-align: right">земного шара</p>
+    <div class="content_desk_header">
+      <div class="rotate"></div>
+      <div class="city"></div>
+      <div class="chess3"></div>
+      <div class="chess4"></div>
+      <div class="chess01"></div>
+      <div class="chess"></div>
+        <header class="header">
+          <img alt="#" src="img/logo.svg" class="header__logo">
+          <div class="header__content">
+            <div class="header__title">
+              <p>Превратите уездный город</p>
+              <p style="text-align: center">в столицу</p>
+              <p style="text-align: right">земного шара</p>
+            </div>
+            <div class="header__subtitle" style="text-align: center;">
+              Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам
+            </div>
+            <div class="header__buttons">
+              <a class="btn btn--common" href="#support-section">Поддержать шахматную мысль</a>
+              <a class="btn btn--common btn--outline" href="#stages-section">Подробнее о турнире</a>
+            </div>
           </div>
-          <div class="header__subtitle" style="text-align: center;">
-            Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам
-          </div>
-          <div class="header__buttons">
-            <a class="btn btn--common" href="#support-section">Поддержать шахматную мысль</a>
-            <a class="btn btn--common btn--outline" href="#stages-section">Подробнее о турнире</a>
-          </div>
-        </div>
-      </div>
-    </header>
+      </header>
+
+    </div>
 
     <marquee class="marquee" behaviour="slide">
       <span>Дело помощи утопающим — дело рук самих утопающих!</span>
@@ -94,29 +98,25 @@
             </a>
           </p>
           <div class="stages__content desktop">
-            <div class="stages__cell">Строительство железнодорожной магистрали Москва-Васюки</div>
-
-            <div class="stages__cell">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</div>
-
+            <div class="stages__cell">Строительство железнодорожной магистрали Москва-Васюки
+            </div>
+            <div class="stages__cell">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
+            </div>
             <div class="stages__cell">Поднятие сельского хозяйства в радиусе на тысячу километров: производство
               овощей, фруктов, икры, шоколадных конфет
             </div>
-
-            <div class="stages__cell">Строительство дворца для турнира</div>
-
+            <div class="stages__cell">Строительство дворца для турнира
+            </div>
             <div class="stages__cell">Размещение гаражей <br> для гостевого <br> автотранспорта</div>
-
             <div class="stages__cell">Постройка сверхмощной радиостанции для передачи всему миру сенсационных
               результатов
             </div>
-
             <div class="stages__cell">
               Создание аэропорта «Большие Васюки»
               регулярным отправлением почтовых
               самолётов и дирижаблей во все концы
               света, включая Лос-Анжелос и Мельбурн
-
-              <img src="img/plane.png" alt="#" class="stages__plane">
+                <img src="img/plane.png" alt="#" id="stages__plane">
             </div>
           </div>
         </section>
@@ -195,9 +195,6 @@
           </div>
         </section>
       </div>
-
-
-
     </main>
     <marquee class="marquee" behaviour="slide">
       <span>Дело помощи утопающим — дело рук самих утопающих!</span>
@@ -210,11 +207,11 @@
         познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».
       </p>
     </footer>
+    </div>
 
-  </div>
 
 
-  <div class="mobile">
+  <!-- <div class="mobile">
     <header class="header">
       <div class="header__city"></div>
       <div class="container">
@@ -426,7 +423,7 @@
       </p>
     </footer>
 
-  </div>
+  </div> -->
 
 </body>
 <script src="carousel_anima.js"></script>
