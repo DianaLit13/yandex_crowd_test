@@ -85,14 +85,15 @@
   --box-sizing: border-box;
   --border:3px solid red;
   pointer-events: none;
-  position: absolute;
   --padding-block-start: 67px;
   --padding-block-end: max(24px, calc(29px + var(--font-size-md)));
   --perspective: 100px;
   top: 0px;
   bottom: 0px;
-  left: 0px;
+  left: -165px;
   right: 0px;
+  overflow: hidden;
+
 }
 @media (max-width: 568px) {
   .carousel {
