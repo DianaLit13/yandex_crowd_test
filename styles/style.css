@@ -16,6 +16,98 @@ body {
   height: 100%;
 }
 
+.content_desk_header{
+  background-image: url("../img/1924.png");
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+
+}
+
+.rotate{
+  background-image: url("../img/rotate.png");
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-position-y: -96px;
+  background-position-x: 848px;
+}
+
+.city{
+  background-image: url("../img/city.png");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 4;
+  background-position-y: 260px;
+  background-position-x: 114px;
+}
+
+.chess3{
+  background-image: url("../img/chess3.png");
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  top: 30%;
+  left: 30%;
+  z-index: 3;
+  background-position-y: 69px;
+  background-position-x: 405px;
+}
+
+.chess4{
+  background-image: url("../img/chess4.png");
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  top: 70%;
+  left: 70%;
+  z-index: 8;
+  background-position-y: 70px;
+  background-position-x: 178px;
+}
+
+.chess01{
+  background-image: url("../img/chess01.png");
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  top: 10%;
+  left: 10%;
+  z-index: 9;
+  background-position-y: 414px;
+  background-position-x: 814px;
+}
+
+.chess{
+  background-image: url("../img/chess.png");
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  top: 10%;
+  left: 10%;
+  z-index: 2;
+  background-position-y: 89px;
+  background-position-x: 1116px;
+}
+
+
+
+#stages__plane {
+  right: -60px;
+  bottom: 0;
+  position: absolute;
+}
 
 .header__title {
   font-family: "Merriweather", serif;
@@ -28,7 +120,8 @@ body {
 .header__content {
   position: relative;
   margin-top: 62px;
-
+  padding-right: 160px;
+  width: calc(50%);
 }
 
 .header__title .header__subtitle {
@@ -42,13 +135,13 @@ body {
 
 .header {
   height: 700px;
-  background-image: url("../img/header_desk.png");
   padding-top: 26px;
   position: relative;
-  padding-inline: 20px;
+  padding-inline: 248px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 10;
 }
 
 .players__title {
@@ -68,7 +161,7 @@ body {
 @media (min-width: 1366px) {
   .desktop {
     display: block;
-    width: 1222px;
+    width: 100%;
     margin: auto;
   }
 
@@ -88,6 +181,13 @@ body {
     width: 542px;
   }
 
+  .container{
+    padding-inline: 350px;
+  }
+
+  .p{
+    color: #313131;
+  }
 }
 
 .support__text {
@@ -103,18 +203,7 @@ body {
   justify-content: space-between;
 }
 
-.marquee {
-  margin: 0;
-  font-family: "Merriweather", serif;
-  font-weight: 400;
-  font-size: 22px;
-  text-transform: uppercase;
-  line-height: 24px;
-  color: #fff;
-  vertical-align: middle;
-  background-color: #F54932;
-  padding: 18px 0;
-}
+
 
 .marquee span {
   vertical-align: middle;
@@ -138,7 +227,6 @@ body {
     padding: 10px;
   }
 }
-
 
 /* Mobile */
 @media (max-width: 1365px) {
@@ -230,36 +318,6 @@ a {
 #sesion_img {
   width: 474px;
   height: 527px;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Golos Text", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.2s ease-out;
-  transition-property: background-color, color;
-}
-
-.btn--common {
-  border: none;
-  height: 72px;
-  padding: 15px 50px;
-  border-radius: 36px;
-  background-color: #1F1F1F;
-  color: #fff;
-}
-
-@media (max-width: 480px) {
-  .btn--common {
-    padding-inline: 0 !important;
-    align-items: center;
-  }
 }
 
 .btn--common:hover {
@@ -618,12 +676,7 @@ a {
 
 }
 
-@media (max-width: 480px) {
-  .stages__cell {
-    padding: 0 20px 0 20px;
-    counter-increment: number;
-  }
-}
+
 
 @media (max-width: 480px) {
   .stages__cell::before {
@@ -740,9 +793,6 @@ a {
   }
 }
 
-.carousel {
-  overflow: hidden;
-}
 
 .carousel__inner {
   display: flex;
@@ -799,28 +849,6 @@ td {
   padding: 18px 0;
 }
 
-.marquee span {
-  vertical-align: middle;
-}
-
-.marquee span::after {
-  content: "";
-  display: inline-block;
-  margin-inline: 12px;
-  border-radius: 50%;
-  width: 6px;
-  height: 6px;
-  background-color: #fff;
-  margin-bottom: 5px;
-  vertical-align: middle;
-}
-
-@media (max-width: 480px) {
-  .marquee {
-    font-size: 16px;
-    padding: 10px;
-  }
-}
 
 s {
   text-decoration-color: #F54932;
@@ -872,22 +900,6 @@ a {
   }
 }
 
-.btn--common:hover {
-  background: #FBCE51;
-  color: #1F1F1F;
-}
-
-.btn--outline {
-  outline: 2px solid #1F1F1F;
-  outline-offset: -2px;
-  background: transparent;
-  color: #1F1F1F;
-}
-
-.btn--outline:hover {
-  background: #1F1F1F;
-  color: #fff;
-}
 
 .btn--circle {
   height: 44px;
@@ -903,160 +915,6 @@ a {
     width: 36px;
   }
 }
-
-.btn--circle:hover {
-  background: #FBCE51;
-}
-
-.btn--circle:disabled {
-  background-color: #D6D6D6;
-  cursor: not-allowed;
-}
-
-.btn--detailed {
-  outline: 1px solid #3057A2;
-  outline-offset: -1px;
-  background: transparent;
-  color: #3057A2;
-  padding: 10px 12px;
-  border-radius: 62px;
-  line-height: 19px;
-}
-
-.btn--detailed:hover {
-  background: #3057A2;
-  color: #fff;
-}
-
-.session {
-  margin-top: 17px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 17px;
-}
-
-@media (max-width: 1200px) {
-  .session {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 480px) {
-  .session {
-    margin-top: 34px;
-    flex-direction: column;
-    gap: 0;
-  }
-}
-
-.session__title {
-  text-transform: uppercase;
-}
-
-.session__content {
-  margin-top: 47px;
-  color: #313131;
-  font-family: "Merriweather", sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-}
-
-@media (max-width: 480px) {
-  .session__content {
-    margin-top: 24px;
-    font-size: 28px;
-  }
-}
-
-.session__content strong {
-  color: #F54932;
-}
-
-.session__list {
-  margin: 60px 0 0;
-  color: #313131;
-  font-family: "Golos Text", sans-serif;
-  font-size: 20px;
-  line-height: 24px;
-}
-
-@media (max-width: 480px) {
-  .session__list {
-    margin-top: 44px;
-  }
-}
-
-@media (min-width: 481px) {
-  .session__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 481px) {
-
-  .session__list dt:not(:first-of-type),
-  .session__list dd:not(:first-of-type) {
-    padding-top: 16px;
-  }
-
-  .session__list dt:not(:last-of-type),
-  .session__list dd:not(:last-of-type) {
-    border-bottom: 2px solid #D0D0D0;
-    padding-bottom: 16px;
-  }
-}
-
-.session__list dt {
-  opacity: 0.7;
-}
-
-@media (max-width: 480px) {
-  .session__list dt:not(:first-of-type) {
-    padding-top: 16px;
-  }
-}
-
-@media (min-width: 481px) {
-  .session__list dt {
-    border-right: 2px solid #D0D0D0;
-    padding-right: 16px;
-  }
-}
-
-.session__list dd {
-  font-weight: 600;
-  margin: 0;
-}
-
-@media (max-width: 480px) {
-  .session__list dd {
-    padding-top: 12px;
-  }
-
-  .session__list dd:not(:last-of-type) {
-    border-bottom: 2px solid #D0D0D0;
-    padding-bottom: 16px;
-  }
-}
-
-@media (min-width: 481px) {
-  .session__list dd {
-    padding-left: 16px;
-  }
-}
-
-.session__contact {
-  margin-top: 48px;
-}
-
-@media (max-width: 480px) {
-  .session__contact {
-    margin-top: 40px;
-  }
-}
-
 
 @media (max-width: 480px) {
   .stages {
@@ -1091,15 +949,6 @@ a {
   }
 }
 
-.stages__content>div:nth-child(3) {
-  grid-row: span 2;
-}
-
-.stages__content>div:nth-child(7) {
-  padding-right: 285px;
-  grid-column: span 2;
-  position: relative;
-}
 
 
 .stages__cell {
@@ -1114,12 +963,7 @@ a {
   gap: 16px;
 }
 
-@media (max-width: 480px) {
-  .stages__cell {
-    padding: 0 20px 0 20px;
-    counter-increment: number;
-  }
-}
+
 
 .stages__cell::before {
   content: counter(stages__cell);
@@ -1134,14 +978,4 @@ a {
   line-height: 36px;
   font-size: 20px;
   font-weight: 600;
-}
-
-@media (max-width: 480px) {
-  .stages__cell::before {
-    content: counter(number);
-  }
-}
-
-.stages .item3 {
-  grid-row: span 2;
 }
