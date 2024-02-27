@@ -4,7 +4,8 @@ const slides = document.querySelector(".slides");
 const slidesCount = slides.childElementCount;
 const maxLeft = (slidesCount - 1) * 100 * -1;
 
-let current = 0;
+let current = -500; 
+const maxLeft = (slidesCount - 1) * 100 * -1;
 
 function changeSlide(next = true) {
   if (next) {
